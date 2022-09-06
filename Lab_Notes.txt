@@ -1,0 +1,35 @@
+1. Send a mail using smtp server
+2. Router configuration commands 	
+	enable
+	configure terminal(conf t)
+	?
+	int
+	interface fastEthernet 0/1
+	switchport mode access
+	switchport access vlan 101
+	no shutdown
+	exit
+	interface fastEthernet 0/3
+	switchport mode access vlan 101
+	switchport access vlan 101
+	no shutdown
+	exit
+	interface fastEthernet 0/2
+	switcport mode access
+	switchport access vlan 102
+	no shutdown
+	exit
+	interface fastEthernet 0/4
+	switchport mode access
+	switchport access vlan 102
+	no shutdown
+	exit
+	do write memory
+	interface fastEthernet 0/5
+	switchport mode access
+	switchport access vlan 101
+	no shutdown
+	do write memory
+	exit
+	
+	
